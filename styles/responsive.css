@@ -1,0 +1,98 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.timeline-image {
+		height: 180px;
+	}
+
+	.btn {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	.timeline-container::before {
+		left: 30px;
+	}
+
+	.timeline-card {
+		padding: 20px;
+		border-left: none;
+		border-right: none;
+		border-top: 4px solid var(--accent-color);
+	}
+
+	.timeline-card::before {
+		left: 30px;
+		top: -12px;
+	}
+
+	.message-card {
+		padding: 25px;
+	}
+
+	.heart-counter {
+		right: 10px;
+		padding: 6px 12px;
+		font-size: 0.8rem;
+	}
+
+	.heart-icon {
+		font-size: 1rem;
+	}
+
+	.gallery-container {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.gallery-item {
+		height: 150px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	.container {
+		width: 95%;
+		padding: 0 10px;
+	}
+
+	.message-card {
+		padding: 20px 15px;
+	}
+
+	.wish-box {
+		padding: 20px 15px;
+	}
+
+	.heart-counter {
+		right: 5px;
+		padding: 5px 10px;
+		font-size: 0.75rem;
+	}
+
+	.heart-icon {
+		font-size: 0.9rem;
+	}
+
+	.gallery-container {
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	}
+
+	.gallery-item {
+		height: 130px;
+	}
+}

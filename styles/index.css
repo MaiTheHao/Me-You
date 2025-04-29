@@ -1,0 +1,8 @@
+/* Main stylesheet for Anniversary Page */
+/* Importing modularized stylesheets */
+
+@import 'base.css';
+@import 'components.css';
+@import 'sections.css';
+@import 'animations.css';
+@import 'responsive.css';

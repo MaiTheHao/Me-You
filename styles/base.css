@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Dancing+Script:wght@400;700&display=swap');
+
+:root {
+	--blush-pink: #f9d5d3; /* Sự dịu dàng, ngọt ngào của tình yêu */
+	--rose-red: #e63946; /* Tình yêu nồng cháy nhưng tinh tế */
+	--dusty-rose: #c97b84; /* Tông vintage nhẹ nhàng, trầm lắng */
+	--champagne: #f7efe5; /* Gợi cảm giác thanh thoát, sang trọng */
+	--midnight-blue: #2b2d42; /* Sự vững chắc, chiều sâu và tin tưởng */
+	--cloud-gray: #d8d8d8; /* Trung tính, hài hòa giữa các màu nóng */
+
+	/* Aliasing for semantic use throughout the app */
+	--primary-bg: var(--champagne);
+	--secondary-bg: var(--blush-pink);
+	--accent-color: var(--rose-red);
+	--text-color: var(--midnight-blue);
+	--border-color: var(--dusty-rose);
+	--neutral-color: var(--cloud-gray);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--primary-bg);
+	color: var(--text-color);
+	line-height: 1.6;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: 'Dancing Script', cursive;
+	color: var(--text-color);
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: var(--accent-color);
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 15px;
+}

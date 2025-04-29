@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>3 Năm Yêu Thương - Kỷ Niệm Ngày Đoàn Tụ</title>
+		<link rel="stylesheet" href="styles/index.css" />
+		<meta name="description" content="Kỷ niệm 3 năm yêu thương - Một hành trình đầy kỷ niệm và hạnh phúc" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	</head>
+	<body>
+		<section class="hero" id="hero">
+			<div class="container">
+				<h1>Số Năm Yêu Thương Của Chúng Ta</h1>
+				<p>Kỷ niệm đặc biệt vào <span class="special-date">30/4</span></p>
+				<p id="days-until" class="countdown">Đang tính toán...</p>
+				<div>
+					<button id="start-journey" class="btn btn-primary">Bắt Đầu Hành Trình</button>
+					<button id="music-toggle" class="btn btn-secondary">Bật Nhạc</button>
+				</div>
+				<div class="heart-counter">
+					<span class="heart-icon">♥</span>
+					<span class="counter">3 năm</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="timeline" id="timeline">
+			<div class="container">
+				<div class="timeline-header">
+					<h2>Hành Trình Tình Yêu</h2>
+					<p>Nhìn lại những khoảnh khắc đáng nhớ trong cuộc hành trình của chúng ta</p>
+				</div>
+
+				<div class="timeline-container">
+					<div class="timeline-card">
+						<div
+							class="timeline-image"
+							style="background-image: url('./public/pictures/years/0.png')"
+						></div>
+						<h3>Lần Đầu Gặp Gỡ</h3>
+						<p class="timeline-date">30/4/2022</p>
+						<p>Buổi hẹn cà phê đầu tiên của chúng ta tại quán cà phê ấm cúng đó...</p>
+					</div>
+
+					<div class="timeline-card">
+						<div
+							class="timeline-image"
+							style="background-image: url('./public/pictures/years/1.png')"
+						></div>
+						<h3>Kỷ Niệm 1 Năm Bên Nhau</h3>
+						<p class="timeline-date">30/4/2021</p>
+						<p>Năm ấy chúng ta bên nhau, cùng nhau tận hưởng những khoảnh khắc ngọt ngào nhất...</p>
+					</div>
+
+					<div class="timeline-card">
+						<div
+							class="timeline-image"
+							style="background-image: url('./public/pictures/years/2.png')"
+						></div>
+						<h3>Kỷ Niệm 2 Năm Bên Nhau</h3>
+						<p class="timeline-date">30/4/2022</p>
+						<p>Đơn giản mà đầy lãng mạn, với ánh nến lung linh toả ra từ chiếc bánh kem xinh xắn...</p>
+					</div>
+
+					<div class="timeline-card">
+						<div
+							class="timeline-image"
+							style="background-image: url('./public/pictures/sumary/3.png')"
+						></div>
+						<h3>Những Khoảnh Khắc Đáng Nhớ</h3>
+						<p class="timeline-date">2020 - 2023</p>
+						<p>Biết bao kỷ niệm đẹp đã cùng nhau trải qua, từ những ngày mưa đến những ngày nắng...</p>
+					</div>
+
+					<div class="timeline-card">
+						<div
+							class="timeline-image"
+							style="background-image: url('./public/pictures/years/3.png')"
+						></div>
+						<h3>Kỷ Niệm 3 Năm Bên Nhau</h3>
+						<p class="timeline-date special-date">30/4/2023</p>
+						<p>Hôm nay, chúng ta kỷ niệm 3 năm bên nhau, cùng với ngày lễ lớn của đất nước...</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="message" id="message">
+			<div class="container">
+				<div class="message-card">
+					<h2>Gửi Đến Người Yêu Của Anh</h2>
+					<p>
+						Ba năm qua, em đã luôn là ánh nắng trong cuộc đời anh. Từ những ngày đầu tiên, đến những khoảnh
+						khắc đặc biệt như hôm nay, tình yêu của chúng ta vẫn luôn nồng cháy và bền vững.
+					</p>
+					<p>
+						Cảm ơn em đã luôn ở bên anh, dù có những lúc vui hay buồn. Anh yêu em nhiều hơn mỗi ngày, và anh
+						hứa sẽ luôn ở bên em trên chặng đường phía trước.
+					</p>
+					<p>Chúc mừng kỷ niệm 3 năm yêu thương!</p>
+					<video controls poster="./public/videos/v1.mp4" autoplay loop>
+						<source src="./public/videos/v1.mp4" type="video/mp4" />
+						Trình duyệt của bạn không hỗ trợ thẻ video.
+					</video>
+				</div>
+			</div>
+		</section>
+
+		<section class="wish" id="wish">
+			<div class="container">
+				<div class="wish-container">
+					<h2>Gửi Lời Chúc Đến Chúng Tôi</h2>
+					<p>Hãy để lại lời chúc hoặc cảm nhận của bạn</p>
+
+					<div class="wish-box">
+						<textarea id="wish-text" placeholder="Viết lời chúc của bạn tại đây..."></textarea>
+						<button id="submit-wish" class="btn btn-primary">Gửi Lời Chúc</button>
+						<div id="wish-display" class="wish-display"></div>
+					</div>
+
+					<div id="wish-list" class="wish-list">
+						<!-- Các lời chúc sẽ được hiển thị ở đây -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery" id="gallery">
+			<div class="container">
+				<h2>Bộ Sưu Tập Kỷ Niệm</h2>
+				<p>Những khoảnh khắc đẹp đẽ chúng ta đã trải qua cùng nhau</p>
+
+				<div class="gallery-container">
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/1.png')"></div>
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/2.png')"></div>
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/3.png')"></div>
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/4.png')"></div>
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/5.png')"></div>
+					<div class="gallery-item" style="background-image: url('./public/pictures/gallery/6.png')"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta" id="cta">
+			<div class="container">
+				<h2>Chia Sẻ Câu Chuyện Của Chúng Tôi</h2>
+				<button id="share-button" class="btn btn-secondary">Chia Sẻ Câu Chuyện</button>
+				<button id="replay-button" class="btn btn-primary">Xem Lại Hành Trình</button>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>Được tạo nên bằng <span class="heart-icon">♥</span></p>
+			</div>
+		</footer>
+
+		<!-- Audio Element -->
+		<audio id="bg-music" loop>
+			<source src="https://example.com/romantic-song.mp3" type="audio/mp3" />
+			Trình duyệt của bạn không hỗ trợ phát nhạc.
+		</audio>
+
+		<!-- Scripts -->
+		<script type="module" src="utils/animations.js"></script>
+		<script type="module" src="utils/storage.js"></script>
+		<script type="module" src="utils/ui.js"></script>
+		<script type="module" src="utils/index.js"></script>
+		<script type="module" src="js/timeline.js"></script>
+		<script type="module" src="js/wishes.js"></script>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>

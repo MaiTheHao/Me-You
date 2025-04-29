@@ -1,0 +1,154 @@
+/* Button Styles */
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 12px 24px;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	margin: 5px;
+}
+
+.btn-primary {
+	background: var(--accent-color);
+	color: white;
+}
+
+.btn-primary:hover {
+	background: var(--dusty-rose);
+	transform: translateY(-3px);
+}
+
+.btn-secondary {
+	background: var(--midnight-blue);
+	color: white;
+}
+
+.btn-secondary:hover {
+	background: var(--text-color);
+	transform: translateY(-3px);
+}
+
+.btn-secondary.active {
+	background: var(--dusty-rose);
+}
+
+/* Heart Counter */
+.heart-counter {
+	position: absolute;
+	top: -30%;
+	right: 20px;
+	background: white;
+	padding: 10px 15px;
+	border-radius: 30px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	z-index: 10;
+	transition: all 0.3s ease;
+	font-size: 0.9rem;
+}
+
+.heart-icon {
+	color: var(--accent-color);
+	font-size: 1.2rem;
+	animation: pulse 1.5s infinite;
+}
+
+.counter {
+	font-weight: 600;
+	color: var(--text-color);
+}
+
+/* Toast Notification */
+.anniversary-toast {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%) translateY(100px);
+	background: rgba(43, 45, 66, 0.9);
+	color: white;
+	padding: 12px 24px;
+	border-radius: 30px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	opacity: 0;
+	transition: all 0.3s ease;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.anniversary-toast.show {
+	transform: translateX(-50%) translateY(0);
+	opacity: 1;
+}
+
+.toast-success {
+	background: rgba(46, 204, 113, 0.9);
+}
+
+.toast-error {
+	background: rgba(231, 76, 60, 0.9);
+}
+
+.toast-info {
+	background: rgba(52, 152, 219, 0.9);
+}
+
+/* Image Modal */
+.image-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: fadeIn 0.3s ease;
+}
+
+.image-modal img {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+	animation: zoomIn 0.3s ease;
+}
+
+.modal-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+	border-radius: 50%;
+	font-size: 24px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Countdown Element */
+.countdown {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 8px 16px;
+	border-radius: 30px;
+	display: inline-block;
+	margin-bottom: 20px;
+	font-weight: 500;
+	color: var(--accent-color);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	animation: pulse 2s infinite;
+}
