@@ -104,15 +104,15 @@ function setupEventListeners() {
 	// Music toggle button
 	const musicToggle = document.getElementById('music-toggle');
 	if (musicToggle) {
-		const bgMusic = document.getElementById('bg-music');
+		const audio = document.getElementById('myAudio');
 		musicToggle.addEventListener('click', () => {
-			if (bgMusic.paused) {
-				bgMusic.play();
+			if (audio.paused) {
+				audio.play();
 				musicToggle.textContent = 'Tắt Nhạc';
 				musicToggle.classList.add('active');
 				anniversaryUtils.showToast('Đã bật nhạc nền', 'info');
 			} else {
-				bgMusic.pause();
+				audio.pause();
 				musicToggle.textContent = 'Bật Nhạc';
 				musicToggle.classList.remove('active');
 				anniversaryUtils.showToast('Đã tắt nhạc nền', 'info');
