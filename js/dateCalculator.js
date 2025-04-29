@@ -191,7 +191,7 @@ function updateAnniversaryUI() {
 	// Update any year mentions in the page title or headings
 	const mainTitle = document.querySelector('title');
 	if (mainTitle) {
-		mainTitle.textContent = `${getCurrentAnniversaryYear() - 1} Năm Yêu Thương`;
+		mainTitle.textContent = `${getCurrentAnniversaryYear() - 1} Năm Hành Trình`;
 	}
 
 	const heroHeading = document.querySelector('.hero h1');
